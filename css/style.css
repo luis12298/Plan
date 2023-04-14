@@ -94,8 +94,8 @@ tr:nth-child(even) {
   margin-right: 5px;
 }
 .dataTables_wrapper .dataTables_filter input {
-  width: 300px; /* ajusta el ancho del campo de entrada */
-  font-size: 14px; /* ajusta el tamaño de la fuente */
+  width: 300px; 
+  font-size: 14px;
 }
 @media screen and (max-width: 768px) {
 .dataTables_wrapper .dataTables_filter input {
