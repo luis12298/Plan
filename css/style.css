@@ -48,21 +48,6 @@ input[type="file"] {
   border-radius: 5px;
   outline: none;
 }
-/* Estilo para pantallas pequeñas */
-@media screen and (max-width: 767px) {
-  input[type="file"] {
-    margin: 0 auto 10px;
-    max-width: 100%;
-  }
-}
-
-/* Estilo para pantallas grandes */
-@media screen and (min-width: 768px) {
-  input[type="file"] {
-    margin: 0 auto 20px;
-    max-width: 50%;
-  }
-}
 
 option {
   font-size: 16px;
@@ -111,6 +96,15 @@ tr:nth-child(even) {
 .dataTables_wrapper .dataTables_filter input {
   width: 300px; /* ajusta el ancho del campo de entrada */
   font-size: 14px; /* ajusta el tamaño de la fuente */
+}
+@media screen and (max-width: 768px) {
+.dataTables_wrapper .dataTables_filter input {
+width: 100%;
+max-width: 300px;
+margin: 0 auto 20px;
+font-size: 14px;
+border: solid 1px #0072d1;
+}
 }
 .image {
   margin-bottom: 35px;
