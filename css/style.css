@@ -48,16 +48,27 @@ input[type="file"] {
   border-radius: 5px;
   outline: none;
 }
+/* Estilo para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  input[type="file"] {
+    margin: 0 auto 10px;
+    max-width: 100%;
+  }
+}
+
+/* Estilo para pantallas grandes */
+@media screen and (min-width: 768px) {
+  input[type="file"] {
+    margin: 0 auto 20px;
+    max-width: 50%;
+  }
+}
 
 option {
   font-size: 16px;
 }
 
-.table-responsive {
-  padding-top: 1rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
+
 table {
   border-collapse: collapse;
   width: 100%;
