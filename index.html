@@ -9,23 +9,26 @@
    <link rel="stylesheet" href="style.css">
    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
    <style>
+      .main-wrapper {
+         width: 100%;
+      }
+
       .table-responsive {
-         padding-top: 1rem;
          overflow-x: auto;
-         -webkit-overflow-scrolling: touch;
       }
 
-      @media only screen and (max-width: 767px) {
-         .container {
-            width: 100%;
-         }
+      .table-responsive>table {
+         width: 100%;
+         border-collapse: collapse;
+         -webkit-overflow-scrolling: touch
       }
 
-      @media only screen and (min-width: 768px) {
-         .container {
-            max-width: 960px;
-            margin: 0 auto;
-         }
+      .table-responsive>table td,
+      th {
+         border: 1px solid #cccccc;
+         padding: 8px;
+         font-family: Arial;
+         font-size: 16px;
       }
    </style>
 </head>
@@ -39,13 +42,15 @@
             <option value="">Elegir</option>
          </select></label>
    </div>
-   <div class="table-responsive">
-      <table id="dataTable" class="display">
-         <thead>
-            <tr></tr>
-         </thead>
-         <tbody></tbody>
-      </table>
+   <div class="main-wrapper">
+      <div class="table-responsive">
+         <table id="dataTable" class="display">
+            <thead>
+               <tr></tr>
+            </thead>
+            <tbody></tbody>
+         </table>
+      </div>
    </div>
 
    <script src="xlsx.full.min.js"></script>
