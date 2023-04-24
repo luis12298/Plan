@@ -8,6 +8,13 @@
    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
    <link rel="stylesheet" href="style.css">
    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+   <script>
+      $(document).ready(function () {
+         $("#btn-subir").click(function () {
+            $("#fileInput").click();
+         });
+      });
+   </script>
    <style>
       .main-wrapper {
          width: 100%;
@@ -52,7 +59,9 @@
       <h1>Busqueda de datos en Excel</h1>
 
       <input type="file" id="fileInput" accept=".xlsx">
+      <button id="btn-subir">Seleccionar archivo</button>
       <label for="Hoja">Elija una Hoja<select name="" id="sheet-select">
+
             <option value="">Elegir</option>
          </select></label>
    </div>
